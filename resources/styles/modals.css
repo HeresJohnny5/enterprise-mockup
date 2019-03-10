@@ -10,3 +10,20 @@ section {
 .deliverable:hover {
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+.deliverable-anchor {
+  color: #000;
+}
+
+.deliverable-anchor:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#communication-banner {
+  background-color: #e74c3c;
+}
+
+.communication-txt {
+  color: #e74c3c;
+}
