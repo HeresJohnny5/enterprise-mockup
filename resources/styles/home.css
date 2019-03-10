@@ -1,3 +1,21 @@
+.splash-container {
+  color: #fff;
+  position: relative;
+}
+
 .card-body {
   padding: .75em;
+}
+
+#learning-experience-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#learning-experience-list > a:hover {
+  text-decoration: none;
+}
+
+#learning-experience-title {
+  margin: .75em 0;
 }
