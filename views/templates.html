@@ -65,6 +65,61 @@
       </div>
     </main>
 
+    <section>
+      <div class="container">
+        <div class="row d-flex justify-content-around">
+          <button class="btn btn-primary" type="button" data-filter="all">All</button>
+          <button class="btn btn-primary" type="button" data-filter=".wireframe">Wireframe</button>
+          <button class="btn btn-primary" type="button" data-filter=".code">Code</button>
+          <button class="btn btn-primary" type="button" data-filter=".collaboration">Collaboration</button>
+        </div>
+
+        <div class="container mixiup-item">
+          <div class="row mb-3">
+            <div class="col-sm-4 mix wireframe">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1532102235608-dc8fc689c9ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by NEW DATA SERVICES on Unsplash">
+            </div>
+
+            <div class="col-sm-4 mix collaboration">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1526029834688-277f359be090?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80" alt="Photo by rawpixel on Unsplash">
+            </div>
+
+            <div class="col-sm-4 mix wireframe">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1535598745644-bc7913bb1a2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80" alt="Photo by José Alejandro Cuffia on Unsplash">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-sm-4 mix code">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1519163219899-21d2bb723b3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by NeONBRAND on Unsplash">
+            </div>
+
+            <div class="col-sm-4 mix collaboration">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1527664557558-a2b352fcf203?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="https://images.unsplash.com/photo-1527664557558-a2b352fcf203?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
+            </div>
+
+            <div class="col-sm-4 mix code">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1518818608552-195ed130cdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Photo by Hitesh Choudhary on Unsplash">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4 mix code">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by Taras Shypka on Unsplash">
+            </div>
+
+            <div class="col-sm-4 mix collaboration">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1503647098920-d5a4604f42c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1048&q=80" alt="Photo by rawpixel on Unsplash">
+            </div>
+
+            <div class="col-sm-4 mix wireframe">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Photo by UX Store on Unsplash">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
       <div class="container">
         <div class="row">
@@ -82,5 +137,19 @@
     <script src="../resources/scripts/mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <script>
+      var containerEl = document.querySelector('.mixiup-item');
+
+      var mixer = mixitup(containerEl, {
+        animation: {
+          duration: 1000,
+          nudge: false,
+          reverseOut: false,
+        }
+      });
+    </script>
   </body>
 </html>
