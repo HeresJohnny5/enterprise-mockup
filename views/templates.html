@@ -13,6 +13,27 @@
     <link rel="stylesheet" href="../resources/styles/templates.css">
 
     <title>Enterprise Mockup</title>
+
+    <style>
+      .text {
+        background-color: #0069aa;
+        bottom: 0;
+        color: #fff;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 10px;
+        position: absolute;
+        transition: 0.3s;
+        max-width: 340px
+      }
+
+      .wireframe:hover .text, .code:hover .text, .collaboration:hover .text {
+        max-height: 100px;
+        max-width: 340px;
+        position: absolute;
+        transition: 0.2s;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -67,53 +88,89 @@
 
     <section>
       <div class="container">
-        <div class="row d-flex justify-content-around">
-          <button class="btn btn-primary" type="button" data-filter="all">All</button>
-          <button class="btn btn-primary" type="button" data-filter=".wireframe">Wireframe</button>
-          <button class="btn btn-primary" type="button" data-filter=".code">Code</button>
-          <button class="btn btn-primary" type="button" data-filter=".collaboration">Collaboration</button>
+        <div class="row mb-4 d-flex justify-content-around">
+          <button class="btn btn-outline-primary" type="button" data-filter="all">All</button>
+          <button class="btn btn-outline-primary" type="button" data-filter=".wireframe">Wireframe</button>
+          <button class="btn btn-outline-primary" type="button" data-filter=".code">Code</button>
+          <button class="btn btn-outline-primary" type="button" data-filter=".collaboration">Collaboration</button>
         </div>
 
         <div class="container mixiup-item">
           <div class="row mb-3">
             <div class="col-sm-4 mix wireframe">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1532102235608-dc8fc689c9ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by NEW DATA SERVICES on Unsplash">
+              <div class="text">
+                <span class="d-block">Wifeframe Template 1</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
 
             <div class="col-sm-4 mix collaboration">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1526029834688-277f359be090?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80" alt="Photo by rawpixel on Unsplash">
+              <div class="text">
+                <span class="d-block">Collaboration Template 1</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
 
             <div class="col-sm-4 mix wireframe">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1535598745644-bc7913bb1a2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80" alt="Photo by José Alejandro Cuffia on Unsplash">
+              <div class="text">
+                <span class="d-block">Wireframe Template 2</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
           </div>
 
           <div class="row mb-3">
             <div class="col-sm-4 mix code">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1519163219899-21d2bb723b3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by NeONBRAND on Unsplash">
+              <div class="text">
+                <span class="d-block">Code Template 1</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
 
             <div class="col-sm-4 mix collaboration">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1527664557558-a2b352fcf203?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="https://images.unsplash.com/photo-1527664557558-a2b352fcf203?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
+              <div class="text">
+                <span class="d-block">Collaboration Template 2</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
 
             <div class="col-sm-4 mix code">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1518818608552-195ed130cdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Photo by Hitesh Choudhary on Unsplash">
+              <div class="text">
+                <span class="d-block">Code Template 2</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-sm-4 mix code">
-              <img class="img-fluid" src="https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by Taras Shypka on Unsplash">
-            </div>
-
             <div class="col-sm-4 mix collaboration">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1503647098920-d5a4604f42c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1048&q=80" alt="Photo by rawpixel on Unsplash">
+              <div class="text">
+                <span class="d-block">Collaboration Template 3</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
+            </div>
+
+            <div class="col-sm-4 mix code">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Photo by Taras Shypka on Unsplash">
+              <div class="text">
+                <span class="d-block">Code Template 3</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
 
             <div class="col-sm-4 mix wireframe">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Photo by UX Store on Unsplash">
+              <div class="text">
+                <span class="d-block">Wireframe Template 3</span>
+                <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odio aliquid non animi, cupiditate quae.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -137,19 +194,6 @@
     <script src="../resources/scripts/mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-
-    <script>
-      var containerEl = document.querySelector('.mixiup-item');
-
-      var mixer = mixitup(containerEl, {
-        animation: {
-          duration: 1000,
-          nudge: false,
-          reverseOut: false,
-        }
-      });
-    </script>
+    <script src="../resources/scripts/templates.js"></script>
   </body>
 </html>
